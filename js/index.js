@@ -24,3 +24,15 @@ function init() {
     updateCartIcon();
     console.log("Shopping cart initialized");
 }
+
+//Fetch products from json file
+function fetchProducts() {
+    fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data; // Changed this line
+            updateProductInfo();
+            addToCartListeners();
+        })
+        .catch(error => console.error('Error loading products:', error));
+}
