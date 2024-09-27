@@ -223,3 +223,6 @@ function loadCartFromLocalStorage() {
         updateCartDisplay();
     }
 }
+
+//Initialize the application
+init();
