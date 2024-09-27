@@ -687,3 +687,159 @@ body {
     transform: translateY(-10px);
     transition: all ease 0.3s;
 }
+
+.contact-container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 100%;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(../assets/img/contactus.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    color:#FFFFFF;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.contact-info > h1 {
+    color: #FFFFFF;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.contact-data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.contact-data > p {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.contact-data > p > i {
+    color:#38b000;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+.contact-links {
+    display:flex;
+    gap:15px;
+}
+
+.contact-links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #38b000;
+    text-align: center;
+    transition: .1s;
+}
+
+.contact-links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.contact-box {
+    position:relative;
+}
+
+.contact-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.contact-box > input::placeholder,
+.contact-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.contact-box > input:focus::placeholder,
+.contact-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.contact-box > input:focus,
+.contact-box > textarea:focus {
+    border-bottom:3px solid #38b000;
+    animation: shake .2s;
+}
+
+.contact-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#FFFFFF;
+    letter-spacing: 1.5px;
+}
+
+
+.contact-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.contact-box > input:focus ~ i {
+    color:#38b000;
+}
+
+.contact-form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #92fe2D;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form > button:hover,
+.links > a:hover {
+    background: #38b000;
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+}
