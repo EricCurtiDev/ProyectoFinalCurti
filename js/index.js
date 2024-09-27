@@ -167,3 +167,41 @@ function updateCartDisplay() {
     cartTotal.textContent = `Total: $${total.toFixed(2)}`;
     console.log(`Cart display updated. Total price: $${total.toFixed(2)}`);
 }
+
+//Checkout function - SweetAlert2
+function checkout() {
+    console.log("Checkout initiated");
+    console.log("Final cart contents:", cart);
+    console.log(`Total items: ${cartItemCount}`);
+    const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+    console.log(`Total price: $${totalPrice}`);
+
+    Swal.fire({
+        title: 'Order Confirmation',
+        text: `Total: $${totalPrice}`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirm Purchase',
+        cancelButtonText: 'Continue Shopping'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Thank you for your purchase!',
+                'Your order has been processed.',
+                'success'
+            ).then(() => {
+                cart = [];
+                cartItemCount = 0;
+                updateCartDisplay();
+                updateCartIcon();
+                modal.style.display = "none";
+                localStorage.removeItem('cart');
+                localStorage.removeItem('cartItemCount');
+            });
+        }
+    });
+
+    console.log("Checkout completed.");
+}
