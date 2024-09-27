@@ -205,3 +205,21 @@ function checkout() {
 
     console.log("Checkout completed.");
 }
+
+//Local Storage
+function saveCartToLocalStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('cartItemCount', cartItemCount);
+}
+
+function loadCartFromLocalStorage() {
+    const savedCart = localStorage.getItem('cart');
+    const savedCartItemCount = localStorage.getItem('cartItemCount');
+    
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+        cartItemCount = parseInt(savedCartItemCount);
+        updateCartIcon();
+        updateCartDisplay();
+    }
+}
