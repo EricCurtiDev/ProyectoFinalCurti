@@ -1,7 +1,7 @@
 # 🎮 LevelUP Video Game Store
 
 <p align="center">
-  <img src="path/to/your/logo.png" alt="LevelUP Logo" width="200"/>
+  <img src="./assets/img/login-logo.webp" alt="LevelUP Logo" width="200"/>
 </p>
 
 <p align="center">
