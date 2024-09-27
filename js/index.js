@@ -224,5 +224,5 @@ function loadCartFromLocalStorage() {
     }
 }
 
-//Initialize the application
+//Initialize the app
 init();
