@@ -137,3 +137,33 @@ function updateQuantity(productId, newQuantity) {
     console.log("Current cart:", cart);
     saveCartToLocalStorage();
 }
+
+//Update cart icon
+function updateCartIcon() {
+    const icon = document.querySelector(CART_ICON_SELECTOR);
+    icon.setAttribute('data-count', cartItemCount);
+    console.log(`Cart icon updated. Total items: ${cartItemCount}`);
+}
+
+function updateCartDisplay() {
+    const cartItems = document.getElementById(CART_ITEMS_ID);
+    const cartTotal = document.getElementById(CART_TOTAL_ID);
+    cartItems.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.innerHTML = `
+            <span>${item.name} - $${item.price.toFixed(2)}</span>
+            <div>
+                <input type="number" value="${item.quantity}" min="1" onchange="updateQuantity(${item.id}, this.value)">
+                <button onclick="removeFromCart(${item.id})">Remove</button>
+            </div>
+        `;
+        cartItems.appendChild(itemElement);
+        total += item.price * item.quantity;
+    });
+
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+    console.log(`Cart display updated. Total price: $${total.toFixed(2)}`);
+}
