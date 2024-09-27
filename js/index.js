@@ -87,3 +87,53 @@ function addToCartListeners() {
         });
     });
 }
+
+//Cart Management Functions
+function addToCart(productId, name, price) {
+    const existingItem = cart.find(item => item.id === productId);
+    if (existingItem) {
+        existingItem.quantity += 1;
+        console.log(`Increased quantity of ${name}. New quantity: ${existingItem.quantity}`);
+    } else {
+        cart.push({ id: productId, name, price, quantity: 1 });
+        console.log(`Added new item to cart: ${name}`);
+    }
+    cartItemCount++;
+    updateCartIcon();
+    updateCartDisplay();
+    console.log("Current cart:", cart);
+    saveCartToLocalStorage();
+}
+
+function removeFromCart(productId) {
+    const itemIndex = cart.findIndex(item => item.id === productId);
+    if (itemIndex > -1) {
+        const removedItem = cart[itemIndex];
+        cartItemCount -= removedItem.quantity;
+        cart.splice(itemIndex, 1);
+        console.log(`Removed item from cart: ${removedItem.name}`);
+    }
+    updateCartDisplay();
+    updateCartIcon();
+    console.log("Current cart:", cart);
+    saveCartToLocalStorage();
+}
+
+function updateQuantity(productId, newQuantity) {
+    const item = cart.find(item => item.id === productId);
+    if (item) {
+        const oldQuantity = item.quantity;
+        const quantityDifference = newQuantity - oldQuantity;
+        cartItemCount += quantityDifference;
+        item.quantity = parseInt(newQuantity);
+        console.log(`Updated quantity of ${item.name} from ${oldQuantity} to ${item.quantity}`);
+        if (item.quantity <= 0) {
+            removeFromCart(productId);
+        } else {
+            updateCartDisplay();
+            updateCartIcon();
+        }
+    }
+    console.log("Current cart:", cart);
+    saveCartToLocalStorage();
+}
