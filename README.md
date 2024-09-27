@@ -78,7 +78,7 @@
 We welcome all gaming enthusiasts to contribute to LevelUP! Check out our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
 <p align="center">
-  <img src="https://contrib.rocks/image?repo=your-username/levelup-game-store" />
+  <img src="./assets/img/login-logo.webp" />
 </p>
 
 ## 📜 License
@@ -88,7 +88,7 @@ This project is protected by the MIT License - see the [LICENSE.md](LICENSE.md) 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/your-username">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/your-username">Eric Curti</a>
 </p>
 
 <p align="center">
