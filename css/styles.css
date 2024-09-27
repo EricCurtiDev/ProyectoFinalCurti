@@ -37,3 +37,15 @@ p {
     color: #465b52;
     margin: 15px 0 20px 0;
 }
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
