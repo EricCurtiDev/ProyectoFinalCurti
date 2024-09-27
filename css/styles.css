@@ -899,3 +899,20 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
+
+/* Media query for responsiveness */
+@media (max-width: 1024px) {
+    #product1 .pro-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #product1 .pro-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-p1 {
+        padding: 40px 40px;
+    }
+}
