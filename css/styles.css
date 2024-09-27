@@ -1,3 +1,4 @@
+/*Font and Global Styles*/
 @font-face {
     font-family: "Montserrat";
     src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
@@ -10,6 +11,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/*Typography*/
 h1 {
     font-size: 50px;
     line-height: 64px;
@@ -38,6 +40,7 @@ p {
     margin: 15px 0 20px 0;
 }
 
+/*Layout Utilities*/
 .section-p1 {
     padding: 40px 80px;
 }
@@ -50,6 +53,7 @@ body {
     width: 100%;
 }
 
+/*Header Styles*/
 #header{
     display: flex;
     align-items: center;
@@ -63,6 +67,7 @@ body {
     left: 0;
 }
 
+/*NavBar Styles*/
 #header .logo {
     width: 70px;
     height: auto;
@@ -104,6 +109,7 @@ body {
     left: 20px;
 }
 
+/*Hero Section*/
 #hero {
     background-image: url("../assets/img/pexels-photo-4009622.webp");
     height: 90vh;
@@ -146,6 +152,7 @@ body {
     font-size: 15px;
 }
 
+/*Feature Section*/
 #feature {
     display: flex;
     align-items: center;
@@ -201,6 +208,7 @@ body {
     background-color: #fff2e5;
 }
 
+/*Top Sellers Section*/
 .top{
     padding: 80px 0;
     text-align: center;
@@ -232,6 +240,7 @@ body {
     transform: scale(1.2);
 }
 
+/*Product Section*/
 #product1 {
     text-align: center;
 }
@@ -312,6 +321,7 @@ body {
     color: #fff;
 }
 
+/*Shopping Cart Styles*/
 .add-to-cart {
     background-color: #088178;
     color: #fff;
@@ -387,6 +397,7 @@ body {
     transform-origin: top right;
 }
 
+/*Modal Styles*/
 .modal {
     display: none;
     position: fixed;
@@ -517,11 +528,11 @@ body {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50; 
     color: white;
     border-radius: 50%;
     padding: 1px 5px;
-    font-size: 10px; /* Smaller font size */
+    font-size: 10px; 
     font-weight: bold;
     line-height: 1;
     min-width: 15px;
@@ -533,6 +544,7 @@ body {
     display: none;
 }
 
+/*SweetAlert2 Styles*/
 .swal2-popup {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -581,6 +593,7 @@ body {
     background-color: #d32f2f;
 }
 
+/*Reviews Section*/
 .testimonial{
     display: flex;
     justify-content: center;
@@ -688,6 +701,7 @@ body {
     transition: all ease 0.3s;
 }
 
+/*Contact Section*/
 .contact-container {
     display:grid;
     grid-template-columns: repeat(2,50%);
@@ -730,8 +744,6 @@ body {
     margin-right: 10px;
     font-size:25px;
 }
-
-
 
 .contact-links {
     display:flex;
@@ -807,7 +819,6 @@ body {
     letter-spacing: 1.5px;
 }
 
-
 .contact-box > i {
     position:absolute;
     top:50%;
@@ -844,12 +855,12 @@ body {
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
 }
 
+/*Footer Section*/
 footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 
 footer .col{
     display: flex;
