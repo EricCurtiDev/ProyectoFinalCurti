@@ -8,15 +8,6 @@
   <strong>Your Ultimate Destination for Gaming Adventures!</strong>
 </p>
 
-<p align="center">
-  <a href="#features">Features</a> •
-  <a href="#demo">Demo</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#license">License</a>
-</p>
 
 ---
 
@@ -35,7 +26,7 @@
   <img src="path/to/your/demo.gif" alt="LevelUP Demo" width="600"/>
 </p>
 
-> Experience the future of game shopping at [LevelUP Store](https://your-demo-link.com)
+> Experience the future of game shopping at [LevelUP Store]("https://ericcurtidev.github.io/ProyectoFinalCurti/")
 
 ## 🛠️ Installation
 
@@ -73,10 +64,6 @@
 - 🤝 Related product suggestions
 - 🌐 Multi-language support
 
-## 🤝 Contributing
-
-We welcome all gaming enthusiasts to contribute to LevelUP! Check out our [Contribution Guidelines](CONTRIBUTING.md) to get started.
-
 <p align="center">
   <img src="./assets/img/login-logo.webp" />
 </p>
@@ -92,7 +79,5 @@ This project is protected by the MIT License - see the [LICENSE.md](LICENSE.md) 
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/your-twitter">Twitter</a> •
-  <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a> •
-  <a href="https://your-portfolio.com">Portfolio</a>
+  <a href="https://www.linkedin.com/in/eric-curti-dev/">LinkedIn</a> •
 </p>
