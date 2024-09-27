@@ -15,3 +15,12 @@ let cartItemCount = 0;
 const modal = document.getElementById(CART_MODAL_ID);
 const cartIcon = document.getElementById('cart-icon');
 const closeBtn = document.getElementsByClassName('close')[0];
+
+//Initialization
+function init() {
+    fetchProducts();
+    addEventListeners();
+    loadCartFromLocalStorage();
+    updateCartIcon();
+    console.log("Shopping cart initialized");
+}
