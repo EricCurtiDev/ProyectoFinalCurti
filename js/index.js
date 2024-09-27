@@ -36,3 +36,13 @@ function fetchProducts() {
         })
         .catch(error => console.error('Error loading products:', error));
 }
+
+//Event listeners
+function addEventListeners() {
+    cartIcon.onclick = openModal;
+    closeBtn.onclick = closeModal;
+    window.onclick = (event) => {
+        if (event.target == modal) closeModal();
+    };
+    document.getElementById(CHECKOUT_BTN_ID).addEventListener('click', checkout);
+}
