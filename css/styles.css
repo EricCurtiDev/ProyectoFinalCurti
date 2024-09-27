@@ -532,3 +532,51 @@ body {
 #cart-icon i[data-count="0"]::after {
     display: none;
 }
+
+.swal2-popup {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.swal2-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.swal2-content {
+    font-size: 16px;
+}
+
+.swal2-confirm {
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.swal2-confirm:hover {
+    background-color: #066e67;
+}
+
+.swal2-cancel { 
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+}
+
+.swal2-cancel:hover {
+    background-color: #d32f2f;
+}
