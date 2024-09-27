@@ -46,3 +46,15 @@ function addEventListeners() {
     };
     document.getElementById(CHECKOUT_BTN_ID).addEventListener('click', checkout);
 }
+
+// Modal functions
+function openModal() {
+    modal.style.display = "block";
+    updateCartDisplay();
+    console.log("Cart opened. Current items:", cart);
+}
+
+function closeModal() {
+    modal.style.display = "none";
+    console.log("Cart closed");
+}
