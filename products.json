@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Dead By Daylight",
+        "price": 19,
+        "image": "./assets/img/p1.jpg",
+        "category": "Horror"
+    },
+    {
+        "id": 2,
+        "name": "Grand Theft Auto V",
+        "price": 40,
+        "image": "./assets/img/p2.jpg",
+        "category": "Action"
+    },
+    {
+        "id": 3,
+        "name": "Elden Ring",
+        "price": 60,
+        "image": "./assets/img/p3.jpg",
+        "category": "Action-Adventure"
+    },
+    {
+        "id": 4,
+        "name": "EA Sports FC 24",
+        "price": 54,
+        "image": "./assets/img/p4.jpg",
+        "category": "Sports"
+    },
+    {
+        "id": 5,
+        "name": "Ghost of Tsushima",
+        "price": 78,
+        "image": "./assets/img/p5.avif",
+        "category": "Action-Adventure"
+    },
+    {
+        "id": 6,
+        "name": "Call of Duty: Modern Warfare III",
+        "price": 59,
+        "image": "./assets/img/p6.jpg",
+        "category": "FPS"
+    },
+    {
+        "id": 7,
+        "name": "Alan Wake 2",
+        "price": 78,
+        "image": "./assets/img/p7.avif",
+        "category": "Action-Adventure"
+    },
+    {
+        "id": 8,
+        "name": "Red Dead Redemption 2",
+        "price": 39,
+        "image": "./assets/img/p8.jpg",
+        "category": "Action-Adventure"
+    },
+    {
+        "id": 9,
+        "name": "Fortnite : Starter Bundle",
+        "price": 19,
+        "image": "./assets/img/p9.avif",
+        "category": "Battle Royale"
+    },
+    {
+        "id": 10,
+        "name": "Destiny 2 : The Witch Queen",
+        "price": 39,
+        "image": "./assets/img/p10.jpg",
+        "category": "FPS"
+    },
+    {
+        "id": 11,
+        "name": "The Callisto Protocol",
+        "price": 59,
+        "image": "./assets/img/p11.jpg",
+        "category": "Horror"
+    },
+    {
+        "id": 12,
+        "name": "Rocket League : Battle-Cars Bundle",
+        "price": 29,
+        "image": "./assets/img/p12.webp",
+        "category": "Racing"
+    }
+]
