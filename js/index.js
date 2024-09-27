@@ -10,3 +10,8 @@ const ADD_TO_CART_CLASS = 'add-to-cart';
 let cart = [];
 let products = [];
 let cartItemCount = 0;
+
+//DOM Elements
+const modal = document.getElementById(CART_MODAL_ID);
+const cartIcon = document.getElementById('cart-icon');
+const closeBtn = document.getElementsByClassName('close')[0];
